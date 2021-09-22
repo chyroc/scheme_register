@@ -1,20 +1,5 @@
-# scheme_register
-
-Register a custom scheme to the operating system and complete the custom processing
-
-## Install
-
-```shell
-go get github.com/chyroc/scheme_register
-```
-
-## Usage
-
-if you want to write a app to handle `myapp://path?a=b` uri, just do this:
-
-
-```go
-package main
+/*
+package scheme_register Register a custom scheme to the operating system and complete the custom processing
 
 import (
 	"log"
@@ -45,4 +30,9 @@ func main() {
 		panic(err)
 	}
 }
-```
+
+and then, your app can handle: `myapp://path?a=b` uri
+*/
+
+package scheme_register
+
